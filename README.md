@@ -8,6 +8,7 @@ A CLI tool to quickly create React + Vite + TypeScript + Tailwind CSS applicatio
 - ⚛️ **React** - The latest React with hooks
 - 🔷 **TypeScript** - Full TypeScript support
 - 🎨 **Tailwind CSS v4** - Latest version with Vite plugin
+- 🧭 **React Router** - Client-side routing with navigation
 - 📦 **Ready to use** - No additional configuration needed
 - 🧹 **ESLint** - Code linting with React-specific rules
 
@@ -107,10 +108,12 @@ my-new-app/
 - React 19 with TypeScript
 - Vite for fast development and building
 - Tailwind CSS v4 with Vite plugin integration
+- React Router DOM with pre-configured routing
 - ESLint with React and TypeScript rules
 - Hot module replacement
 - TypeScript strict mode
 - Modern ES modules
+- Sample pages (Home, About, Contact) with navigation
 
 ## Commands in Generated Projects
 

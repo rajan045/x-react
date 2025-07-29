@@ -1,6 +1,6 @@
 {
   "name": "create-x-react-app",
-  "version": "1.0.2",
+  "version": "1.1.2",
   "description": "A CLI tool to create React + Vite + TypeScript + Tailwind applications",
   "type": "module",
   "bin": {
@@ -33,22 +33,5 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4"
-  },
-  "peerDependencies": {
-    "@eslint/js": "^9.30.1",
-    "@tailwindcss/vite": "^4.1.11",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react-swc": "^3.10.2",
-    "eslint": "^9.30.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.11",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.35.1",
-    "vite": "^7.0.4"
   }
 }
