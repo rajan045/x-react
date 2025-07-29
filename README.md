@@ -1,69 +1,124 @@
-# React + TypeScript + Vite
+# create-x-react-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A CLI tool to quickly create React + Vite + TypeScript + Tailwind CSS applications.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ **Vite** - Lightning fast build tool
+- ⚛️ **React** - The latest React with hooks
+- 🔷 **TypeScript** - Full TypeScript support
+- 🎨 **Tailwind CSS v4** - Latest version with Vite plugin
+- 📦 **Ready to use** - No additional configuration needed
+- 🧹 **ESLint** - Code linting with React-specific rules
 
-## Expanding the ESLint configuration
+## Local Development & Testing
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Testing Locally
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Link the package globally:**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+   ```bash
+   npm link
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Create a new project:**
+
+   ```bash
+   create-x-react-app my-new-app
+   ```
+
+3. **Navigate and start development:**
+   ```bash
+   cd my-new-app
+   npm run dev
+   ```
+
+### Unlinking (when done testing)
+
+```bash
+npm unlink -g create-x-react-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Publishing to npm
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Update package info
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Edit `package.json` and update:
+
+- `author` field with your name
+- `version` field (follow semantic versioning)
+- Any other metadata
+
+### 2. Login to npm
+
+```bash
+npm login
 ```
+
+### 3. Publish
+
+```bash
+npm publish
+```
+
+### 4. After publishing, users can install globally:
+
+```bash
+npm install -g create-x-react-app
+```
+
+Or use with npx (recommended):
+
+```bash
+npx create-x-react-app my-app
+```
+
+## Package Structure
+
+```
+├── bin/
+│   └── cli.js          # Main CLI script
+├── template/           # Template files for new projects
+│   ├── src/
+│   ├── public/
+│   ├── package.json    # Template package.json
+│   └── ...
+└── package.json        # CLI package configuration
+```
+
+## Generated Project Structure
+
+```
+my-new-app/
+├── src/
+│   ├── App.tsx         # Main component with Tailwind example
+│   ├── main.tsx        # React entry point
+│   ├── index.css       # Global styles
+│   └── assets/
+├── public/             # Static assets
+├── index.html          # HTML template
+├── vite.config.ts      # Vite configuration with Tailwind
+├── tsconfig*.json      # TypeScript configuration
+└── package.json        # Project dependencies
+```
+
+## What's Included
+
+- React 19 with TypeScript
+- Vite for fast development and building
+- Tailwind CSS v4 with Vite plugin integration
+- ESLint with React and TypeScript rules
+- Hot module replacement
+- TypeScript strict mode
+- Modern ES modules
+
+## Commands in Generated Projects
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## License
+
+MIT
