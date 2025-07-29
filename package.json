@@ -1,6 +1,6 @@
 {
   "name": "create-x-react-app",
-  "version": "1.1.3",
+  "version": "1.2.1",
   "description": "A CLI tool to create React + Vite + TypeScript + Tailwind applications",
   "type": "module",
   "bin": {

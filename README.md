@@ -14,31 +14,28 @@ A CLI tool to quickly create React + Vite + TypeScript + Tailwind CSS applicatio
 
 ## Installation & Usage
 
-### Option 1: Global Installation (Recommended)
+### ⚡ Quick Start (Recommended)
 
-Install once globally and use anywhere:
-
-```bash
-npm install -g create-x-react-app
-```
-
-Then create projects:
-
-```bash
-create-x-react-app my-awesome-app
-cd my-awesome-app
-npm run dev
-```
-
-### Option 2: Use with npx (No Installation Required)
-
-Run directly without installing:
+No installation needed - just run:
 
 ```bash
 npx create-x-react-app my-awesome-app
 cd my-awesome-app
 npm run dev
 ```
+
+### 🌐 Global Installation (Alternative)
+
+Install once and use anywhere:
+
+```bash
+npm install -g create-x-react-app
+create-x-react-app my-awesome-app
+cd my-awesome-app
+npm run dev
+```
+
+> **Note:** `npx` is the recommended method as it always uses the latest version and requires no installation!
 
 ### ✅ Both methods create the same project with:
 
@@ -99,19 +96,19 @@ npm login
 npm publish
 ```
 
-### 4. After publishing, users can install and use:
+### 4. After publishing, users can use:
 
-**Global Installation:**
+**Recommended (npx):**
+
+```bash
+npx create-x-react-app my-app
+```
+
+**Or global installation:**
 
 ```bash
 npm install -g create-x-react-app
 create-x-react-app my-app
-```
-
-**Or use with npx (no installation):**
-
-```bash
-npx create-x-react-app my-app
 ```
 
 ## Package Structure
