@@ -1,4 +1,4 @@
-# create-x-react-app
+# create-x-react-app developed by Rajan Singh
 
 A CLI tool to quickly create React + Vite + TypeScript + Tailwind CSS applications.
 
